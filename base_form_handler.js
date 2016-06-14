@@ -746,10 +746,10 @@ function updateForm(rmt) {
          $('#outspeed-' + tierOptions.outSpeed).addClass('highest');
       };
       if (! tierOptions.wmt) {
-         $('#topleftimage').html('<img src="../css/images/brmt-tl.png">');
+         $('#topleftimage').html('<img src="css/images/brmt-tl.png">');
          $('#topleftimage').css("background-color", COLOR_RED);
       } else {
-         $('#topleftimage').html('<img src="../css/images/wmt-tl.png">');
+         $('#topleftimage').html('<img src="css/images/wmt-tl.png">');
          $('#topleftimage').css("background-color", COLOR_GREEN);
       };
    };
@@ -770,8 +770,8 @@ function updateCell(cell_id, isValid, results, subCell, paintParent) {
       $(cell_id).css("background-color", COLOR_BLUE_GREY);
       $(cell_id).parent().css("background-color", COLOR_BLUE_GREY);
       $(cell_id).removeClass("triangle");
-      if ($(cell_id).html() !== '<img src="../css/images/5_5_blank.png">') {
-         $(cell_id).html('<img src="../css/images/5_5_blank.png">');
+      if ($(cell_id).html() !== '<img src="css/images/5_5_blank.png">') {
+         $(cell_id).html('<img src="css/images/5_5_blank.png">');
       };
    } else {
       var percentage_min = results[subCell].attacks[0].damagePercentage[0];
@@ -799,7 +799,7 @@ function updateCell(cell_id, isValid, results, subCell, paintParent) {
             text = percentage_max + '%';
             break;
          case 'visual':
-            text = '<img src="../css/images/5_5_blank.png">';
+            text = '<img src="css/images/5_5_blank.png">';
             break;
          case 'verbose':
             text = percentage_min + '% - ' + percentage_max + '%<br/>' + move;
