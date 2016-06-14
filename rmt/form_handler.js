@@ -76,8 +76,8 @@ $(document).ready(function() {
    // on show results button click
    $(".breakMyTeam").on('click', function() {
       tierOptions.wmt = false;
-      if ($('#topleftimage').html() !== '<img src="../css/images/brmt-tl.png">') {
-         $('#topleftimage').html('<img src="../css/images/brmt-tl.png">');
+      if ($('#topleftimage').html() !== '<img src="css/images/brmt-tl.png">') {
+         $('#topleftimage').html('<img src="css/images/brmt-tl.png">');
       };
       $('#topleftimage').css("background-color", COLOR_RED);
       updateTable();
@@ -86,8 +86,8 @@ $(document).ready(function() {
    // on show results button click
    $(".wallMyTeam").on('click', function() {
       tierOptions.wmt = true;
-      if ($('#topleftimage').html() !== '<img src="../css/images/wmt-tl.png">') {
-         $('#topleftimage').html('<img src="../css/images/wmt-tl.png">');
+      if ($('#topleftimage').html() !== '<img src="css/images/wmt-tl.png">') {
+         $('#topleftimage').html('<img src="css/images/wmt-tl.png">');
       };
       $('#topleftimage').css("background-color", COLOR_GREEN);
       updateTable();
@@ -357,8 +357,8 @@ function updateTable() {
       // fill in rest of table with blank cells
       for (var i = infoArray.length; i < RMT_TABLE_LENGTH; i++) {
          var cell_id = '#pokeman-0-' + i;
-         if ($(cell_id).html() !== '<img src="../css/images/5_5_blank.png">') {
-            $(cell_id).html('<img src="../css/images/5_5_blank.png">');
+         if ($(cell_id).html() !== '<img src="css/images/5_5_blank.png">') {
+            $(cell_id).html('<img src="css/images/5_5_blank.png">');
          };
       };
 
@@ -367,12 +367,12 @@ function updateTable() {
          var pokemon = environment.pokemons[1][i];
          var cell_id = '#pokeman-1-' + i;
          if (pokemon.valid && isValidPokemonName(pokemon.name)) {
-            if ($(cell_id).html() !== '<img src="../css/images/sprites/' + pokemon.name + '.png">') {
-               $(cell_id).html('<img src="../css/images/sprites/' + pokemon.name + '.png">');
+            if ($(cell_id).html() !== '<img src="css/images/sprites/' + pokemon.name + '.png">') {
+               $(cell_id).html('<img src="css/images/sprites/' + pokemon.name + '.png">');
             };
          } else {
-            if ($(cell_id).html() !== '<img src="../css/images/96_96_blank.png">') {
-               $(cell_id).html('<img src="../css/images/96_96_blank.png">');
+            if ($(cell_id).html() !== '<img src="css/images/96_96_blank.png">') {
+               $(cell_id).html('<img src="css/images/96_96_blank.png">');
             };
          };
       };
