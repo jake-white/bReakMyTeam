@@ -32,23 +32,12 @@
       <div class="bottom-menu">
          <div class="container">
             <div class="row">
-               <div class="col-xs-12">
+               <div class="col-xs-12">                  
                   <ul class="bottom-links">
-                     <li><a href='../../swc/'>SweeperCalc</a></li>
-                     <li><a href='../../rmt/'>bReakMyTeam</a></li>
-                     <li><a href='#' class='active'>Guide</a></li>
-                     <li><a href="mailto:sweepercalc@gmail.com">Give Feedback</a></li>
-                     <li><a href="javascript:;" onclick="document.getElementById('paypal').submit();">Donate</a>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal">
-                           <input type="hidden" name="cmd" value="_donations">
-                           <input type="hidden" name="business" value="sweepercalc@gmail.com">
-                           <input type="hidden" name="lc" value="AU">
-                           <input type="hidden" name="item_name" value="SweeperCalc">
-                           <input type="hidden" name="no_note" value="0">
-                           <input type="hidden" name="currency_code" value="AUD">
-                           <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-                        </form>
-                     </li>
+                     <li><a href='/'>bReakMyTeam</a></li>
+                     <li><a href='http://jake-white.github.io/Battlespotspecial/'>Usage Stats</a></li>
+                     <li><a href='' class='active'>Guide</a></li>
+                     <li><a href="https://twitter.com/squirrelboyVGC">Twitter</a></li>
                      <li><a data-toggle="modal" data-target="#myModal2">About</a></li>
                   </ul>
                </div>
@@ -100,7 +89,6 @@
             </div>
             <div class='col-xs-9'>
                <h1 id='overview'>Overview</h1>
-                  <p>SweeperCalc is a Gen VI 6v6 damage calculator. It is primarily used during online competitive battles as a resource for determining how much damage you can do to your opponents and vice versa. SweeperCalc is useful because it provides a visual overview of all damage calculations by all Pokemon in the battle (and is much more efficient than looking at the calculations manually in a 1v1 calculator). SweeperCalc enables you to import your team as well as select Common Sets which can be used to predict what moves your opponent may have (statistically speaking, your opponent will run the most common set). SweeperCalc is also a great tool for team building in the case of looking at Pokemon sets that bReakMyTeam does not include.</p>
                   <p>bReakMyTeam is a Gen VI team building calculator. It enables you to input your team and ‘break its team’ by displaying the top counters or sweepers to your team. There are two modes: bReakMyTeam which shows the opposing Pokemon that can best attack all your Pokemon, and WallMyTeam, which shows the opposing Pokemon that can best wall all your Pokemon. bReakMyTeam uses a similar colouring style to SweeperCalc to visually display the results of the calculations in a table format.</p>
                   <h1 id='quickstart'>Quick Start</h1>
                   <p>You can import your team straight away if it is in Pokemon Showdown format!</p>
@@ -180,5 +168,29 @@
             </div><!-- close col-xs-9 -->
          </div><!-- close row -->
       </div><!-- close container -->
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel2">About</h4>
+            </div>
+            <div class="modal-body">
+               <b>What is bReakMyTeam?</b>
+                  <p>bReakMyTeam shows the damage that top offensive Pokemon can do to your team.</p>
+               <b>What is WallMyTeam?</b>
+                  <p>WallMyTeam shows the damage that your Pokemon can do to the top defensive Pokemon.</p>
+               <b>Special Thanks to:</b>
+                  <p><a href='http://www.smogon.com/forums/threads/xy-sprite-project-read-1st-post-the-face-of-the-metagame.3486712/'>XY Sprite Project</a> for sprites!</p>
+                  <p><a href='https://twitter.com/_LightCore'>@_LightCore</a> for the suggestion to update bReakMyTeam!</p>
+               <b>Writers:</b>
+                  <p><a href='http://reddit.com/u/migetno1'>migetno1</a>, <a href='http://reddit.com/u/veeveearnh'>veeveearnh</a>, and <a href='https://twitter.com/squirrelboyVGC'>squirrelboy1225</a>.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
    </body>
 </html>

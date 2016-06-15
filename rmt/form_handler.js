@@ -11,14 +11,14 @@ $(document).ready(function() {
    tierOptions = {
       tiers: {
          'uber' : false,
-         'ou' : true,
-         'uu' : true,
+         'ou' : false,
+         'uu' : false,
          'ru' : false,
          'nu' : false,
          'lc' : false,
-         'vgc' : false,
+         'vgc' : true,
       },
-      tier : TIER_TO_NUMBER['ou'],
+      tier : TIER_TO_NUMBER['vgc'],
       boostedSweepers : false,
       enablePriority : false,
       outSpeed : 0,
@@ -69,6 +69,7 @@ $(document).ready(function() {
    updateForm(true);
    // trigger a change to start off
    $(".input-tier").trigger('change');
+   setVGC();
    updateTable();
    saveData();
 
@@ -125,10 +126,7 @@ $(document).ready(function() {
          };
       }
       if (tierOptions.tier === TIER_TO_NUMBER['vgc']) {
-         // make doubles and set to level 50.
-         $('#doubles').prop('checked', true);
-         // set levels to 50
-         $('#l50').prop('checked', true);
+         setVGC();
       } else if (tierOptions.tier === TIER_TO_NUMBER['lc']) {
          // set levels to 5
          $('#l5').prop('checked', true);
@@ -247,6 +245,12 @@ function generateSweeperPokemon() {
       if (tierOptions.liteMode && numPokemon >= 200) break;
    }
 };
+function setVGC(){   
+         // make doubles and set to level 50.
+         $('#doubles').prop('checked', true);
+         // set levels to 50
+         $('#l50').prop('checked', true);
+}
 
 /**
   * Updates the table based on data in the model.
