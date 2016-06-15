@@ -1,3 +1,3 @@
-sweepercalc
+sweepercalc - VGC 2016 Version
 ===========
-LIVE VERSION
+Accessible at http://jake-white.github.io/bReakMyTeam/
