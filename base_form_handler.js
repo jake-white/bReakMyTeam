@@ -113,6 +113,7 @@ $(document).ready(function() {
    // on level change
    $('input[name="setLevels"]').on('change', function() {
       var newDefaultLevel = $('input[name="setLevels"]:checked').val();
+      console.log("Default level is " + newDefaultLevel);
       environment.defaultLevel = (parseInt(newDefaultLevel));
       for (var i = 0; i < environment.pokemons.length; i++) {
          for (var j = 0; j < environment.pokemons[i].length; j++) {

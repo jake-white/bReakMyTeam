@@ -69,6 +69,7 @@ $(document).ready(function() {
    updateForm(true);
    // trigger a change to start off
    $(".input-tier").trigger('change');
+   $('input[name="setLevels"]').trigger('change');
    setVGC();
    updateTable();
    saveData();
